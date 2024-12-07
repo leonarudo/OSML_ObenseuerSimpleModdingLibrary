@@ -3,11 +3,11 @@
 </div>
 <h1 align="center">Obenseuer Simple Modding Library</h1>
 
-[![Release](https://img.shields.io/github/v/release/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary/releases/latest)
-[![Top language](https://img.shields.io/github/languages/top/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary/search?l=C%23)
-[![License](https://img.shields.io/github/license/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary/blob/main/LICENSE)
-[![Issues](https://img.shields.io/github/issues/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary/issues)
-[![Pull requests](https://img.shields.io/github/issues-pr/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary/pulls)
+[![Release](https://img.shields.io/github/v/release/leonarudo/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/leonarudo/OSML_ObenseuerSimpleModdingLibrary/releases/latest)
+[![Top language](https://img.shields.io/github/languages/top/leonarudo/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/leonarudo/OSML_ObenseuerSimpleModdingLibrary/search?l=C%23)
+[![License](https://img.shields.io/github/license/leonarudo/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/leonarudo/OSML_ObenseuerSimpleModdingLibrary/blob/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues/leonarudo/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/leonarudo/OSML_ObenseuerSimpleModdingLibrary/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/leonarudo/OSML_ObenseuerSimpleModdingLibrary)](https://github.com/leonarudo/OSML_ObenseuerSimpleModdingLibrary/pulls)
 
 **Obenseuer Simple Modding Library** is a powerful and user-friendly library mod designed to simplify the process of modding the game [Obenseuer](https://store.steampowered.com/app/951240/Obenseuer/) using its unofficial mod loader, [OSLoader](https://github.com/Ierdna100/OSLoader). 
 Written in C# and targeting .NET Standard 2.1, this library provides a streamlined framework for mod developers to enhance and extend the game's functionality with ease.
@@ -23,9 +23,9 @@ Written in C# and targeting .NET Standard 2.1, this library provides a streamlin
 
 
 ## Getting Started
-- [Wiki](https://github.com/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary/wiki)
-- [Installation Guide](https://github.com/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary/wiki/Installation-Guide)
-- [Library Documentation](https://github.com/BoettcherDasOriginal/OSML_ObenseuerSimpleModdingLibrary/wiki/Library-Documentation)
+- [Wiki](https://github.com/leonarudo/OSML_ObenseuerSimpleModdingLibrary/wiki)
+- [Installation Guide](https://github.com/leonarudo/OSML_ObenseuerSimpleModdingLibrary/wiki/Installation-Guide)
+- [Library Documentation](https://github.com/leonarudo/OSML_ObenseuerSimpleModdingLibrary/wiki/Library-Documentation)
 
 
 ## Contributing

@@ -5,7 +5,6 @@ using System.IO;
 using UnityEngine;
 using FullSerializer;
 using NPC;
-using System.Xml.XPath;
 
 namespace OSML.Detour
 {
@@ -196,12 +195,29 @@ namespace OSML.Detour
         {
             // OSML
 
-            // To do: Load Item Prefab from AssetBundle or obj
             if(!string.IsNullOrEmpty(iap.PrefabPath))
             {
                 if (iap.PrefabPath.StartsWith("OSML#"))
                 {
-                    string path = iap.PrefabPath.Substring(5);
+                    string path = Path.Combine(Assembly.GetAssembly(typeof(ObenseuerSimpleModdingLibrary)).Location.Substring(0, Assembly.GetAssembly(typeof(ObenseuerSimpleModdingLibrary)).Location.Length - 13), iap.PrefabPath.Substring(5));
+                    path = path.Substring(0, path.Length - 3);
+
+                    if (File.Exists(path + "png") && File.Exists(path + "obj"))
+                    {
+                        iap.Prefab = ItemCreator.ItemPrefabFromOBJ(path + "obj", path + "png", item.Title);
+                        if (iap.Prefab == null)
+                        {
+                            iap.Prefab = Resources.Load<GameObject>("Prefabs/Items/ERROR");
+                        }
+                    }
+                    else if(File.Exists(path + "jpg") && File.Exists(path + "obj"))
+                    {
+                        iap.Prefab = ItemCreator.ItemPrefabFromOBJ(path + "obj", path + "jpg", item.Title);
+                        if (iap.Prefab == null)
+                        {
+                            iap.Prefab = Resources.Load<GameObject>("Prefabs/Items/ERROR");
+                        }
+                    }
 
                     return null;
                 }
@@ -211,7 +227,27 @@ namespace OSML.Detour
             {
                 if (iap.PrefabPathMany.StartsWith("OSML#"))
                 {
-                    string pathMany = iap.PrefabPathMany.Substring(5);
+                    if (iap.PrefabPathMany.Length == 5) iap.PrefabMany = iap.Prefab;
+
+                    string pathMany = Path.Combine(Assembly.GetAssembly(typeof(ObenseuerSimpleModdingLibrary)).Location.Substring(0, Assembly.GetAssembly(typeof(ObenseuerSimpleModdingLibrary)).Location.Length - 13), iap.PrefabPathMany.Substring(5));
+                    pathMany = pathMany.Substring(0, pathMany.Length - 3);
+
+                    if (File.Exists(pathMany + "png") && File.Exists(pathMany + "obj"))
+                    {
+                        iap.Prefab = ItemCreator.ItemPrefabFromOBJ(pathMany + "obj", pathMany + "png", item.Title);
+                        if (iap.Prefab == null)
+                        {
+                            iap.Prefab = Resources.Load<GameObject>("Prefabs/Items/ERROR");
+                        }
+                    }
+                    else if (File.Exists(pathMany + "jpg") && File.Exists(pathMany + "obj"))
+                    {
+                        iap.Prefab = ItemCreator.ItemPrefabFromOBJ(pathMany + "obj", pathMany + "jpg", item.Title);
+                        if (iap.Prefab == null)
+                        {
+                            iap.Prefab = Resources.Load<GameObject>("Prefabs/Items/ERROR");
+                        }
+                    }
 
                     return null;
                 }
